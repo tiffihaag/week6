@@ -1,0 +1,40 @@
+.container {
+	height: 960px;
+}
+
+body {
+ background-color: grey;
+}
+
+.jumbotron {
+	height: 130px;
+	font-size: 60px;
+	text-align: center;
+	vertical-align: center;
+}
+
+.buttonHolder {
+	margin-left: 100px;
+	margin-top: -940px;
+	margin-right: 100px;
+	height: 200px;
+	background-color: white;
+	background-image: url("../images/politician.jpg");
+	background-repeat: no-repeat;
+	background-size: 200px;
+}
+
+.submitButton {
+	font-size: 30px;
+	text-align: right;
+	margin-top: 20px;
+	margin-right: 98px;
+}
+
+.gifPlace {
+	background-color: white;
+	height: 900px;
+	margin-right: 100px;
+	margin-left: 100px;
+	margin-top: 20px;
+}
