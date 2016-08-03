@@ -29,6 +29,7 @@ $(document).ready(function(){
         });     
 	}); //onclick function
 
+
 	$('.polButton').on('click', function() {
         var politician = $(this).attr("data-person");
         console.log(politician);
