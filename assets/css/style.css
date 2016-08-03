@@ -13,28 +13,24 @@ body {
 	vertical-align: center;
 }
 
-.buttonHolder {
-	margin-left: 100px;
-	margin-top: -940px;
-	margin-right: 100px;
-	height: 200px;
-	background-color: white;
-	background-image: url("../images/politician.jpg");
-	background-repeat: no-repeat;
-	background-size: 200px;
-}
-
 .submitButton {
 	font-size: 30px;
-	text-align: right;
+	text-align: center;
 	margin-top: 20px;
 	margin-right: 98px;
+	margin-left: 100px;
+	margin-bottom: 20px;
+
 }
 
-.gifPlace {
+.imgPlace {
 	background-color: white;
 	height: 900px;
 	margin-right: 100px;
 	margin-left: 100px;
 	margin-top: 20px;
+}
+
+#buttonList {
+	text-align: center;
 }

@@ -4,25 +4,41 @@
   <meta charset="UTF-8">
   <title>Political GIFs</title>
 
-  <!-- Bootstrap File -->
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
+  <!-- Javascript -->
+  <script src="assets/javascript/app.js"></script>
+
+  <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 	<div class="jumbotron">Political GIFs</div>
-	<div class="container"></div>
-  <div class="buttonHolder"></div>
+	 
   <div class="submitButton">
-    <form action=" ">
-    Make an Addition: <input type="text"><br>
-    <input type="submit" value="Submit">
-    </form>
+    Add a Politician: <input type="text" id="politician">
+    <input type="button" id="subButton" value="Submit">
   </div>
-  <div class="gifPlace"></div>
+
+  <div id="buttonList">
+      <button class="polButton" data-person="Hillary Clinton">Hillary Clinton</button>
+      <button class="polButton" data-person="Bernie Sanders">Bernie Sanders</button>
+      <button class="polButton" data-person="Donald Trump">Donald Trump</button>
+      <button class="polButton" data-person="Ted Cruz">Ted Cruz</button>
+      <button class="polButton" data-person="Joe Biden">Joe Biden</button>
+  </div>
+
+  <div class="imgPlace" id="imgHolder"></div>
 
 </body>
+
+  
+
+</html>
+
+    
