@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function() { 
 
 	$(document.body).on('click', '.polButton', function() {
         var politician = $(this).attr("data-person");
@@ -28,9 +28,17 @@ function getPics(politician) {
 	        	for (var i = 0; i < 10; i++) {
 		        	var imageUrl = response.data[i].images.downsized_large.url;
 
-		        	var imgHtml = "<img src = '" + imageUrl + "' height='200' width='200'>";
+		        	var imgStill = response.data[i].images.original_still.url;
+
+		        	var imgHtml = "<img src = '" + imgStill + "' height='200' width='200' class='gifplayer' data-gif='"+ imageUrl +"'>";
 		        	$(imgHtml).appendTo(".imgPlace");
-	        	}
+		        }
 	        });
 	}
+	$(document.body).on('click', '.gifplayer', function() {
+		var imgSource = $(this).attr('src');
+		var gifSource = $(this).attr('data-gif');
+		$(this).attr('src', gifSource);
+		$(this).attr('data-gif', imgSource);
+	});
 }); //docready function

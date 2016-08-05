@@ -1,5 +1,6 @@
 body {
- background-color: grey;
+	background-image: url("../images/background.jpg");
+ 	opacity: .9;
 }
 
 .jumbotron {
@@ -16,7 +17,8 @@ body {
 	margin-right: 98px;
 	margin-left: 100px;
 	margin-bottom: 20px;
-
+	padding-bottom: 20px;
+	color: blue;
 }
 
 .imgPlace {
